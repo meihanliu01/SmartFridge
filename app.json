@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Smart Fridge",
+    "slug": "smart-fridge",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Smart Fridge uses the camera to scan ingredients from photos.",
+        "NSPhotoLibraryUsageDescription": "Smart Fridge needs access to your photos to detect ingredients from images."
+      }
+    },
+    "android": {
+      "permissions": ["android.permission.CAMERA", "android.permission.READ_EXTERNAL_STORAGE"],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
+
